@@ -1,10 +1,11 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?famliy=Noto+Sans+KR&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
 body{
-    background-color: #f8f0c5;
+    background-color: #353d47;
     color: darkslategray; 
-    font-family: 'Noto Sans KR',sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;   
     line-height: 30px;
 }
@@ -18,15 +19,17 @@ section{
 }
 
 .wrapper{
-    width: 85%;
+    width: 70%;
     margin: 20px auto;
 }
 h1{
     display: none;
 }
 h2, h3{
-    font-family: sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    
 }
+
 h2{
     margin: 0 0 20px 0;
     text-transform: uppercase;
@@ -69,8 +72,9 @@ a {
 
 }
 a:hover{
-    text-decoration: underline;
-    color: gold;
+    
+    color: rgb(0, 163, 141);
+    text-decoration: none;
 
 }
 
@@ -90,7 +94,7 @@ ul li::before{
     margin-right: 10px;
 }
 
-ul li:nth-child(1)::before{
+/* ul li:nth-child(1)::before{
     content: url('../images/ico_mobile.png');
 }
 
@@ -105,6 +109,7 @@ ul li:nth-child(3)::before{
 ul li:nth-child(4)::before{
     content: url('../images/ico_blog.png');
 }
+*/
 #skills ol{
     list-style: none;
     padding:0;
@@ -138,15 +143,61 @@ ul li:nth-child(4)::before{
     width: 100%;
 }
 #projects a{
-    color: gold;
+    background-color:#2f2f2f;
     display: inline-block;
-    border-radius: 4px;
-    padding: 2px 8px 2px 0;
+    color: #ddd;
+    
+    border-radius: 10px;
+    padding: 2px 8px;
 }
 
 #projects a:hover{
-    background-color: #2f2f2f;
+    background-color: #d3a10a;
     text-decoration: none;
-    padding: 2px 8px;
+    padding: 3px 9px;
     transition: padding 0.2s;
+}
+blockquote{
+    position: relative;
+    padding:3rem;
+    margin-top: 1rem;
+}
+blockquote::before,
+blockquote::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+blockquote::before{
+    border-top: 5px solid rgb(237, 237, 237);
+    border-left: 5px solid rgb(234, 234, 234);
+    top:0;
+    left:0;
+}
+blockquote::after{
+    border-bottom: 5px solid rgb(238, 238, 238);
+    border-right: 5px solid rgb(240, 240, 240);
+    bottom:0;
+    right:0;
+}
+.hello{
+    font-style: italic;
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 1.2px;
+    font-size: 16px;
+   
+}
+.hello1{
+    font-size: 14.5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ol{
+    list-style: circle;
+}
+i{
+    padding-right: 9px;
+    padding-bottom: 7px;
+    color: rgb(105, 113, 139);
+ 
 }
