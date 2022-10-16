@@ -5,7 +5,8 @@ body{
     background-color: #f8f0c5;
     color: darkslategray; 
     font-family: 'Noto Sans KR',sans-serif;
-    font-size: 16px;   
+    font-size: 15px;   
+    line-height: 30px;
 }
 
 section{
@@ -53,11 +54,11 @@ th{
 }
 
 th, td{
-    font-size: 12px;
+    font-size: 15px;
 }
 #myname td{
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 
