@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var account = {
+            owner : "홍길동",
+            code : "1111-11",
+            balance : 9999900000,
+            inquiry: function(){
+            return this.balance;
+        },
+            deposit:function(money){
+            this.balance += money;
+        },
+            withdraw:function(money){
+            this.balance -= money;
+            return money;
+        }
+        };
+
+        var account2 = {
+            owner : "이순신",
+            code : "1111-22",
+            balance : 99998800000,
+            inquiry: function(){
+            return this.balance;
+        },
+            deposit:function(money){
+            this.balance += money;
+        },
+            withdraw:function(money){
+            this.balance -= money;
+            return money;
+        }
+        };
+    </script>
+</head>
+<body>
+    <h3>리터럴 표기법으로 객체 만들기</h3>
+    <hr>
+    <script>
+        document.write('account : '+account.owner+','+ account.code+', '+account.balance+'<br><br>');
+        
+        account.deposit(111000000);
+        document.write('잔액 : '+account.inquiry()+'<br>');
+        account.withdraw(500000);
+        document.write('잔액 : '+account.inquiry()+'<br><br>');
+
+        document.write('account : '+account2.owner+','+ account2.code+', '+account2.balance+'<br><br>');
+        
+        account2.deposit(111000000);
+        document.write('잔액 : '+account2.inquiry()+'<br>');
+        account2.withdraw(500000);
+        document.write('잔액 : '+account2.inquiry()+'<br>');
+    </script>
+</body>
+</html>

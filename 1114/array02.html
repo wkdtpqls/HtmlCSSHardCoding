@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array 객체로 배열 만들기</h3>
+    <hr>
+    <script>
+        var degrees = new Array(5);
+        // degrees[0] = 15.1;
+        // degrees[1] = 15.4;
+        // degrees[2] = 16.1;
+        // degrees[3] = 17.5;
+        // degrees[4] = 19.2;
+        // degrees[5] = 21.4;
+
+        for(i=0,sum=0; i<degrees.length;i++){
+            degrees[i] = parseFloat(prompt("현재 온도 입력",15));
+            sum+=degrees[i];
+        }
+        document.write('degrees = [');
+
+        for(i=0;i<degrees.length;i++){
+            
+            if(i==degrees.length-1)
+                document.write(degrees[i]+'] <br>');
+            else
+                document.write(degrees[i]+', ');
+        }
+        document.write('합계 : '+sum+'<br>');
+        document.write('평균 : '+sum/degrees.length+'<br>');
+        document.write('degrees = ['+degrees.toString()+']');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Account(owner, code, balance){
+            this.owner = owner;
+            this.code = code;
+            this.balance = balance;
+            this.inquiry=function inquiry(){
+            return this.balance;
+        };
+            this.deposit=function(money){
+            this.balance += money;
+        };
+            this.withdraw=function(money){
+            this.balance -= money;
+            return money;
+        };
+        
+    }
+    </script>
+</head>
+<body>
+    <h3>Account protptype 만들기</h3>
+    <hr>
+    <script>
+        var account = new Account("홍길동","1111-11",999000000000);
+        var account2 = new Account("이순신","1111-22",99988880000);
+        document.write('account : '+account.owner+','+ account.code+', '+account.balance+'<br><br>');
+        account.deposit(111000000);
+        document.write('잔액 : '+account.inquiry()+'<br>');
+        account.withdraw(500000);
+        document.write('잔액 : '+account.inquiry()+'<br>');
+    </script>
+</body>
+</html>
