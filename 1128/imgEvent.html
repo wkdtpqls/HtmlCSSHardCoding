@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let files =["img/다람쥐.jpg",
+                    "img/랫서팬더.jpg",
+                    "img/사막여우.jpg",
+                    "img/양.jpg",
+                    "img/코알라.jpg",
+                    "img/하마.jpg"];
+        let imgs = new Array();
+        for(let i=0;i<files.length;i++){
+            imgs[i] = new Image();
+            imgs[i].src = files[i];
+        }
+
+        let next = 1;
+        function change(img){
+            img.src = imgs[next].src;
+            next++;
+            next %= imgs.length;
+        }
+    </script>
+</head>
+<body>
+    <h3>new Image()로 이미지 로딩</h3>
+    <hr>
+    이미지를 클릭하면 다음 이미지를 보여줍니다.
+    <br>
+    <img src="img/하마.jpg" alt="동물이미지" style="border: 20px ridge wheat" width= "200" height= "200" 
+
+    onclick="change(this)">
+</body>
+</html>
