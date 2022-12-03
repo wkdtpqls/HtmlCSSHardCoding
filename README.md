@@ -1,4 +1,7 @@
-:star:매 수업시간 마다 정리한 내용을 깃 블로그에 정리하였습니다!
+:bulb: 매 수업시간 마다 정리한 내용을 깃 블로그에 정리하였습니다!
+<br>
+:bulb: 블로그로 이동을 원하시면:arrow_right:[여기](https://wkdtpqls.github.io/)를 클릭하세요!
+<br>
 |수업 날짜| 링 크 | 과 제 | Repository |
 |------|---|---|---|
 |2022-09-05|<a href="https://wkdtpqls.github.io/typescript01/">0905</a>|||
