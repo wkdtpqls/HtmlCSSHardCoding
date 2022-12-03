@@ -3,7 +3,7 @@
 <br>
 
 |수업 날짜| 링 크 | 과 제 | Repository |
-|------|---|---|---|
+|:------:|:---:|:---:|:---:|
 |2022-09-05|<a href="https://wkdtpqls.github.io/typescript01/">0905</a>|||
 |2022-09-19|<a href="https://wkdtpqls.github.io/typescript02/">0919</a>|||
 |2022-09-26|<a href="https://wkdtpqls.github.io/typescript02/">0926</a>|||
