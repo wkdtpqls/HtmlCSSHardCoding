@@ -1,6 +1,6 @@
 🌼 매 수업시간 마다 정리한 내용을 :arrow_right:[GIT BLOG](https://wkdtpqls.github.io/)에 업로드하였습니다!
 
-<br><br>
+<br>
 
 |수업 날짜| 링 크 | 과 제 | Repository |
 |------|---|---|---|
