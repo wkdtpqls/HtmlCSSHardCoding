@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>오늘의 날씨</h1>
+    <input type="text" id="city">
+    <p id="temperature"></p>
+    <p id="wind"></p>
+    <p id="description"></p>
+
+    <script>
+        function getweather() {
+            let city = document.getElementById("city").value;
+            fetch('http://goweather.herokuapp.com/weather/' + city)
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById("temperature").innerHTML =  "온도 : " + data['temperature']
+                    document.getElementById("wind").innerHTML = "바람 : " + data['wind']
+                    document.getElementById("description").innerHTML = "설명 : " + data['description']
+
+                });
+                
+        }
+
+    </script>
+        <button onclick="getweather()">입력하세요!</button>
+</body>
+
+</html>
